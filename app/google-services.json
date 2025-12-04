@@ -1,14 +1,13 @@
 {
   "project_info": {
-    "project_number": "720528771505",
-    "firebase_url": "https://fir-lite-9328d-default-rtdb.europe-west1.firebasedatabase.app",
-    "project_id": "fir-lite-9328d",
-    "storage_bucket": "fir-lite-9328d.appspot.com"
+    "project_number": "1013107524276",
+    "project_id": "practica-63e82",
+    "storage_bucket": "practica-63e82.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:720528771505:android:d8bac2f5a0a168d5d45590",
+        "mobilesdk_app_id": "1:1013107524276:android:f7ac674d89e3412b450de1",
         "android_client_info": {
           "package_name": "com.aristidevs.cursofirebaselite"
         }
@@ -16,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAFvyfXPl4zdq8U3KYPelTGjXZZ8u2USFs"
+          "current_key": "AIzaSyDD-4DrEm4XdvwtK2f-cndTrVoap8UERNk"
         }
       ],
       "services": {
