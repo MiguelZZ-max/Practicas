@@ -17,7 +17,7 @@ fun NavigationWrapper(
     auth: FirebaseAuth
 ) {
 
-    NavHost(navController = navHostController, startDestination = "home") {
+    NavHost(navController = navHostController, startDestination = "initial") {
         composable("initial") {
             InitialScreen(navigateToLogin = { navHostController.navigate("logIn") },
                 navigateToSignUp = { navHostController.navigate("signUp") })

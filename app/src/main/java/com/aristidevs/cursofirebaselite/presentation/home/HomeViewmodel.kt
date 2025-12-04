@@ -1,5 +1,6 @@
 package com.aristidevs.cursofirebaselite.presentation.home
 
+import android.annotation.SuppressLint
 import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -39,9 +40,9 @@ class HomeViewmodel : ViewModel() {
 
     init {
 
-//        repeat(20) {
-//            loadData()
-//        }
+      repeat(20) {
+         loadData()
+      }
         checkUserVersion()
         getArtists()
         getPlayer()
@@ -67,15 +68,16 @@ class HomeViewmodel : ViewModel() {
 
     }
 
-//    private fun loadData() {
-//        val random = (1..10000).random()
-//        val artist = Artist(
-//            name = "Random $random",
-//            description = "Descripción random número $random",
-//            image = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwyXeKDN29AmZgZPLS7n0Bepe8QmVappBwZCeA3XWEbWNdiDFB"
-//        )
-//        db.collection("artists").add(artist)
-//    }
+    @SuppressLint("SuspiciousIndentation")
+    private fun loadData() {
+       val random = (1..10000).random()
+     val artist = Artist(
+          name = "Random $random",
+          description = "Descripción random número $random",
+         image = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwyXeKDN29AmZgZPLS7n0Bepe8QmVappBwZCeA3XWEbWNdiDFB"
+      )
+       db.collection("artists").add(artist)
+   }
 
     private fun getArtists() {
         viewModelScope.launch {
